@@ -1,12 +1,20 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - davidliyutong
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - robotflow-initiative/rfmarkit-esp-node
+  - davidliyutong/cloud-platform-apiserver
+  - davidliyutong/cloud-platform-frontend
+  - xiaoxiaoxh/UniFolding
+  - davidliyutong/optitrack_bridge
+  - robotflow-initiative/azure-kinect-apiserver
+  - robotflow-initiative/infrastructure
+  - davidliyutong/code-server-speit
+  - davidliyutong/oauth2proxy
+  - davidliyutong/esp32-magnet
+  - davidliyutong/ingress-authproxy
+  - davidliyutong/go-dfs-server
+  - davidliyutong/canvas-cppgrader
+  - davidliyutong/SPEIT-Templates
+  - davidliyutong/Flint
+  - cicadaStudio/esp8266-smartlock
