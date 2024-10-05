@@ -1,4 +1,210 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alshedivat.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://alshedivat.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-09-19T17:53:38+00:00</updated><id>https://alshedivat.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">CKA exam cheatsheet</title><link href="https://alshedivat.github.io/blog/2024/cka-exam-explained/" rel="alternate" type="text/html" title="CKA exam cheatsheet"/><published>2024-09-19T00:01:00+00:00</published><updated>2024-09-19T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/cka-exam-explained</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/cka-exam-explained/"><![CDATA[<p>Certificated Kubernetes Admin (CKA) is a widely recognized certificate for K8S admins. The exam is carried out in simulators. There are 17 categories of questions:</p> <ol> <li>RBAC</li> <li>Pod Monitor</li> <li>NetworkPolicy</li> <li>Service Exposure</li> <li>Ingress Creation</li> <li>Node Troubleshooting</li> <li>Pod Scheduling</li> <li>Node Top</li> <li>Multi-Container Pod</li> <li>PV Creation</li> <li>PVC Creation</li> <li>Pod Logging</li> <li>Sidecar Logging</li> <li>Deployment Scale-Up</li> <li>Etcd Backup</li> <li>Cluster Upgrade</li> <li>Node Maintenance</li> </ol>]]></content><author><name></name></author><category term="IT"/><category term="windows"/><summary type="html"><![CDATA[Certificated Kubernetes Admin (CKA) is a widely recognized certificate for K8S admins. The exam is carried out in simulators. There are 17 categories of questions:]]></summary></entry><entry><title type="html">Solution to The physical disk’s sector size is not supported by the storage pool (0x80E70004)</title><link href="https://alshedivat.github.io/blog/2024/windows-storage-space/" rel="alternate" type="text/html" title="Solution to The physical disk’s sector size is not supported by the storage pool (0x80E70004)"/><published>2024-09-19T00:01:00+00:00</published><updated>2024-09-19T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/windows-storage-space</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/windows-storage-space/"><![CDATA[<p>Sometimes, people get error when adding disks to storage space:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The physical disk's sector size is not supported by the storage pool.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alshedivat.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://alshedivat.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-10-05T17:32:15+00:00</updated><id>https://alshedivat.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Unifi AP Get Started Guide</title><link href="https://alshedivat.github.io/blog/2024/dnf-crb/" rel="alternate" type="text/html" title="Unifi AP Get Started Guide"/><published>2024-10-05T00:01:00+00:00</published><updated>2024-10-05T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/dnf-crb</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/dnf-crb/"><![CDATA[<p>EPEL, known as Extra Packages for Enterprise Linux, is a project maintained by the Fedora community to provide additional high-quality packages for Red Hat Enterprise Linux (RHEL) and its derivatives, such as CentOS, Scientific Linux, and others. These packages are often applications and tools that are not included in the official RHEL repositories, but are useful to many users and developers.</p> <p>Configuration Methods:</p> <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf config-manager <span class="nt">--set-enabled</span> crb
+dnf <span class="nb">install </span>epel-release
+</code></pre></div></div>]]></content><author><name></name></author><category term="IT"/><category term="unifi"/><category term="IT"/><summary type="html"><![CDATA[EPEL, known as Extra Packages for Enterprise Linux, is a project maintained by the Fedora community to provide additional high-quality packages for Red Hat Enterprise Linux (RHEL) and its derivatives, such as CentOS, Scientific Linux, and others. These packages are often applications and tools that are not included in the official RHEL repositories, but are useful to many users and developers.]]></summary></entry><entry><title type="html">Docker MacVLAN Configuration Guide</title><link href="https://alshedivat.github.io/blog/2024/docker-macvlan/" rel="alternate" type="text/html" title="Docker MacVLAN Configuration Guide"/><published>2024-10-05T00:01:00+00:00</published><updated>2024-10-05T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/docker-macvlan</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/docker-macvlan/"><![CDATA[<p>In Docker networking, MacVLAN is a powerful tool that allows containers to connect directly with the host’s physical network. It is particularly useful in environments where you require your containers to be a part of the same network as your host, appearing as physical devices connected to the network switch.</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network create <span class="nt">-d</span> macvlan <span class="nt">--subnet</span><span class="o">=</span>192.168.1.0/24 <span class="nt">--gateway</span><span class="o">=</span>192.168.1.1 <span class="nt">-o</span> <span class="nv">parent</span><span class="o">=</span>enp6s18 lan
+</code></pre></div></div> <ul> <li><code class="language-plaintext highlighter-rouge">enp6s18</code> is the NIC’s name</li> <li><code class="language-plaintext highlighter-rouge">192.168.1.0/24</code> is definition of subnet</li> <li><code class="language-plaintext highlighter-rouge">192.168.1.1</code> is the gateway</li> </ul> <p>To use this network, add this section to <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code></p> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">networks</span><span class="pi">:</span>
+  <span class="na">lan</span><span class="pi">:</span>
+    <span class="na">external</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>]]></content><author><name></name></author><category term="IT"/><category term="docker"/><category term="network"/><category term="IT"/><summary type="html"><![CDATA[In Docker networking, MacVLAN is a powerful tool that allows containers to connect directly with the host’s physical network. It is particularly useful in environments where you require your containers to be a part of the same network as your host, appearing as physical devices connected to the network switch.]]></summary></entry><entry><title type="html">Unifi AP Get Started Guide</title><link href="https://alshedivat.github.io/blog/2024/unifi-get-started/" rel="alternate" type="text/html" title="Unifi AP Get Started Guide"/><published>2024-10-05T00:01:00+00:00</published><updated>2024-10-05T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/unifi-get-started</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/unifi-get-started/"><![CDATA[<p>Here are some useful Unifi AP commands.</p> <h3 id="reset-device">Reset Device</h3> <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>syswrapper.sh restore-default
+</code></pre></div></div> <h3 id="set-information-command">Set Information Command</h3> <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set-inform http://&lt;domain_name&gt;:8080/inform
+</code></pre></div></div>]]></content><author><name></name></author><category term="IT"/><category term="unifi"/><category term="IT"/><summary type="html"><![CDATA[Here are some useful Unifi AP commands.]]></summary></entry><entry><title type="html">Cheatsheet to run MANUS</title><link href="https://alshedivat.github.io/blog/2024/manus-cheatsheet/" rel="alternate" type="text/html" title="Cheatsheet to run MANUS"/><published>2024-10-03T00:01:00+00:00</published><updated>2024-10-03T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/manus-cheatsheet</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/manus-cheatsheet/"><![CDATA[<p>The following Cheatsheet summarizes my experience running <a href="https://github.com/brown-ivl/manus">MANUS</a>, and mainly describes how to solve some of the problems encountered</p> <h2 id="cuda_home-undefined-problem"><code class="language-plaintext highlighter-rouge">CUDA_HOME</code> undefined problem</h2> <p>You need to install cuda toolkit</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c nvidia/label/cuda-11.8.0 cuda-toolkit
+</code></pre></div></div> <h2 id="x86_64-conda-linux-gnu-c-not-found"><code class="language-plaintext highlighter-rouge">x86_64-conda-linux-gnu-c++ not found</code></h2> <p>Install <code class="language-plaintext highlighter-rouge">gxx_linux-64</code></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install gxx_linux-64
+</code></pre></div></div> <h2 id="glmglmhpp-no-such-file-or-directory"><code class="language-plaintext highlighter-rouge">glm/glm.hpp: No such file or directory</code></h2> <p>Install this package</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libglm-dev
+</code></pre></div></div> <h2 id="numpy-is-unavailable">Numpy is unavailable</h2> <p>Downgrade numpy to 1.22.4</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install numpy==1.22.4 matplotlib scikit-image scipy
+</code></pre></div></div> <h2 id="aio-script">AIO script</h2> <p>Actual all-in-one script</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libglm-dev
+
+conda create -n manus python=3.10
+conda activate manus
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install gxx_linux-64
+pip install numpy==1.22.4 matplotlib scikit-image scipy
+
+mkdir submodules
+cd submodules
+git clone --recursive https://github.com/graphdeco-inria/diff-gaussian-rasterization
+git clone --recursive https://gitlab.inria.fr/bkerbl/simple-knn.git
+
+cd diff-gaussian-rasterization
+python -m setup.py install
+cd ..
+
+cd simple-knn
+python -m setup.py install
+cd ..
+
+pip install pytorch-lightning==2.0.1 easydict joblib opencv-python natsort omegaconf h5py scikit-learn termcolor imageio trimesh setuptools==59.5.0 plotly hydra-core --upgrade matplotlib pymeshlab scikit-image taichi lpips colorama
+</code></pre></div></div>]]></content><author><name></name></author><category term="Python"/><category term="Research"/><category term="research"/><category term="python"/><category term="hand"/><summary type="html"><![CDATA[The following Cheatsheet summarizes my experience running MANUS, and mainly describes how to solve some of the problems encountered]]></summary></entry><entry><title type="html">The right way to manage CUDA environment with conda.</title><link href="https://alshedivat.github.io/blog/2024/conda-nvidia-cuda/" rel="alternate" type="text/html" title="The right way to manage CUDA environment with conda."/><published>2024-09-28T00:01:00+00:00</published><updated>2024-09-28T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/conda-nvidia-cuda</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/conda-nvidia-cuda/"><![CDATA[<p>There are several principal rules:</p> <ol> <li>Conda manages Python distribution better than it manages python packages.</li> <li>Always install all python packages via pip.</li> </ol> <p>If you only need to use the runtime and don’t need tools such as <code class="language-plaintext highlighter-rouge">nvcc</code>, then you need to install <code class="language-plaintext highlighter-rouge">cuda-toolkit</code>. conda provides the relevant packages at <a href="https://anaconda.org/nvidia/cuda-toolkit">https://anaconda.org/nvidia/cuda-toolkit</a>, and you need to install the corresponding version of <code class="language-plaintext highlighter-rouge">cuda-toolkit</code> using a command like <code class="language-plaintext highlighter-rouge">conda install -c nvidia/label/cuda-11.8.0 cuda-toolkit</code> to install the corresponding version.</p> <p>If you need to use <code class="language-plaintext highlighter-rouge">nvcc</code>, e.g. to compile a PyTorch plugin, then you need to install <code class="language-plaintext highlighter-rouge">cuda</code>, which is available from conda at <a href="https://anaconda.org/nvidia/cuda">https://anaconda.org/nvidia/cuda</a>, and you need to install the corresponding version using a command like <code class="language-plaintext highlighter-rouge">conda install -c nvidia/label/cuda-11.8.0 cuda</code> cuda</p> <blockquote> <p>According to <a href="https://github.com/ContinuumIO/anaconda-issues/issues/13398">this issue</a>, you need to use the -c parameter to specify the channel to install the package, otherwise, if you follow the example on the anaconda website (using :: to specify the channel), it will definitely install version 12.4.</p> </blockquote>]]></content><author><name></name></author><category term="Python"/><category term="telemetry"/><category term="maintenance"/><category term="python"/><summary type="html"><![CDATA[There are several principal rules:]]></summary></entry><entry><title type="html">Establishing a telegraf metric system</title><link href="https://alshedivat.github.io/blog/2024/telegraf-metric/" rel="alternate" type="text/html" title="Establishing a telegraf metric system"/><published>2024-09-28T00:01:00+00:00</published><updated>2024-09-28T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/telegraf-metric</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/telegraf-metric/"><![CDATA[<p>Telegraf is an agent for collecting, processing, aggregating, and writing metrics. With over 200 plugins, it provides all the metrics you need to track and understand your systems and applications effectively. This blog will demonstrate how to set up a telegraf metric stack.</p> <p>To persist the data, we will store the telemetry data using <strong>InfluxDB.</strong> This efficient time-series database is well suited to store the data for subsequent analysis (e.g. visualization via Grafana).</p> <h2 id="deploy-a-influxdb-service">Deploy A InfluxDB Service</h2> <p>There are two ways to deploy an InfluxDB database:</p> <ol> <li>Docker Compose</li> <li>Kubernetes</li> </ol> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">services</span><span class="pi">:</span>
+  <span class="na">influxdb</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">influxdb:2.2</span> <span class="c1"># image name</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">influxdb</span> <span class="c1"># container name</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">8086:8086"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">influxdb_conf:/etc/influxdb</span> <span class="c1"># conf volume</span>
+      <span class="pi">-</span> <span class="s">influxdb_data:/var/lib/influxdb</span> <span class="c1"># data volume</span>
+<span class="na">volumes</span><span class="pi">:</span>
+  <span class="na">influxdb_data</span><span class="pi">:</span>
+  <span class="na">influxdb_conf</span><span class="pi">:</span>
+</code></pre></div></div> <p>Below is the reference configuration file for deployment using K8S. Please note that NFS data volumes are used here and the service is exposed through Nginx Ingress, so the actual deployment needs to be modified according to the specific cluster configuration (the places that need to be modified have been labeled). Deployment type resources are used here, actually using StatefulSet would be better.</p> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">apps/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Deployment</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">labels</span><span class="pi">:</span>
+    <span class="na">workload.user.cattle.io/workloadselector</span><span class="pi">:</span> <span class="s">apps.deployment-&lt;namespace&gt;-influxdb</span> <span class="c1"># TO BE MODIFED</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">influxdb</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">&lt;namespace&gt;</span> <span class="c1"># TO BE MODIFED</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">replicas</span><span class="pi">:</span> <span class="m">1</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">matchLabels</span><span class="pi">:</span>
+      <span class="na">workload.user.cattle.io/workloadselector</span><span class="pi">:</span> <span class="s">apps.deployment-&lt;namespace&gt;-influxdb</span> <span class="c1"># TO BE MODIFED</span>
+  <span class="na">template</span><span class="pi">:</span>
+    <span class="na">metadata</span><span class="pi">:</span>
+      <span class="na">creationTimestamp</span><span class="pi">:</span> <span class="kc">null</span>
+      <span class="na">labels</span><span class="pi">:</span>
+        <span class="na">workload.user.cattle.io/workloadselector</span><span class="pi">:</span> <span class="s">apps.deployment-&lt;namespace&gt;-influxdb</span> <span class="c1"># TO BE MODIFED</span>
+    <span class="na">spec</span><span class="pi">:</span>
+      <span class="na">containers</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">image</span><span class="pi">:</span> <span class="s">influxdb:2.2</span>
+          <span class="na">imagePullPolicy</span><span class="pi">:</span> <span class="s">IfNotPresent</span>
+          <span class="na">name</span><span class="pi">:</span> <span class="s">container-0</span>
+          <span class="na">ports</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">containerPort</span><span class="pi">:</span> <span class="m">8086</span>
+              <span class="na">name</span><span class="pi">:</span> <span class="s">8086tcp</span>
+              <span class="na">protocol</span><span class="pi">:</span> <span class="s">TCP</span>
+          <span class="na">resources</span><span class="pi">:</span>
+            <span class="na">limits</span><span class="pi">:</span>
+              <span class="na">cpu</span><span class="pi">:</span> <span class="s2">"</span><span class="s">2"</span>
+              <span class="na">memory</span><span class="pi">:</span> <span class="s">4Gi</span>
+            <span class="na">requests</span><span class="pi">:</span>
+              <span class="na">cpu</span><span class="pi">:</span> <span class="s">50m</span>
+              <span class="na">memory</span><span class="pi">:</span> <span class="s">128Mi</span>
+          <span class="na">volumeMounts</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">mountPath</span><span class="pi">:</span> <span class="s">/var/lib/influxdb2</span>
+              <span class="na">name</span><span class="pi">:</span> <span class="s">&lt;volume_name&gt;</span> <span class="c1"># TO BE MODIFED</span>
+              <span class="na">subPath</span><span class="pi">:</span> <span class="s">db-data</span>
+            <span class="pi">-</span> <span class="na">mountPath</span><span class="pi">:</span> <span class="s">/etc/influxdb</span>
+              <span class="na">name</span><span class="pi">:</span> <span class="s">&lt;volume_name&gt;</span> <span class="c1"># TO BE MODIFED</span>
+              <span class="na">subPath</span><span class="pi">:</span> <span class="s">db-config</span>
+      <span class="na">restartPolicy</span><span class="pi">:</span> <span class="s">Always</span>
+      <span class="na">volumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">&lt;volume_name&gt;</span> <span class="c1"># TO BE MODIFED</span>
+          <span class="na">nfs</span><span class="pi">:</span>
+            <span class="na">path</span><span class="pi">:</span> <span class="s">/&lt;volume_path&gt;</span> <span class="c1"># TO BE MODIFED</span>
+            <span class="na">server</span><span class="pi">:</span> <span class="s">0.0.0.0</span> <span class="c1"># TO BE MODIFED</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Service</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">influxdb</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">&lt;namespace&gt;</span> <span class="c1"># TO BE MODIFED</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ports</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">8086tcp</span>
+      <span class="na">port</span><span class="pi">:</span> <span class="m">8086</span>
+      <span class="na">protocol</span><span class="pi">:</span> <span class="s">TCP</span>
+      <span class="na">targetPort</span><span class="pi">:</span> <span class="m">8086</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">workload.user.cattle.io/workloadselector</span><span class="pi">:</span> <span class="s">apps.deployment-&lt;namespace&gt;-influxdb</span> <span class="c1"># TO BE MODIFED</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">ClusterIP</span>
+<span class="nn">---</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">annotations</span><span class="pi">:</span>
+    <span class="na">kubernetes.io/ingress.class</span><span class="pi">:</span> <span class="s">nginx</span> <span class="c1"># TO BE MODIFED</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">influxdb-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">&lt;namespace&gt;</span> <span class="c1"># TO BE MODIFED</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">influxdb.example.com</span> <span class="c1"># TO BE MODIFED</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">influxdb</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">8086</span>
+            <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+  <span class="na">tls</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">hosts</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">influxdb.example.top</span> <span class="c1"># TO BE MODIFED</span>
+      <span class="na">secretName</span><span class="pi">:</span> <span class="s">&lt;tls_secret&gt;</span> <span class="c1"># TO BE MODIFED</span>
+</code></pre></div></div> <h2 id="deploy-a-telegraf-collector">Deploy A Telegraf Collector</h2> <p>These are steps to deploy telegraf collector</p> <ol> <li>Install telegraf package according to this <a href="https://github.com/influxdata/telegraf/blob/master/docs/INSTALL_GUIDE.md">guide</a>.</li> <li>Generate access token from influxdb’s webui.</li> <li>Configure telegraf’s configuration <code class="language-plaintext highlighter-rouge">/etc/telegraf.conf</code> according to the access token.</li> <li>Test the configuration.</li> </ol> <p>You can use this command to generate the default configuration as a reference:</p> <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>telegraf config <span class="o">&gt;</span> telegraf.conf
+</code></pre></div></div> <p>Here is a selection of useful telegraf configurations:</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[<span class="n">global_tags</span>]
+[<span class="n">agent</span>]
+  <span class="n">interval</span> = <span class="s2">"60s"</span>
+  <span class="n">round_interval</span> = <span class="n">true</span>
+  <span class="n">metric_batch_size</span> = <span class="m">1000</span>
+  <span class="n">metric_buffer_limit</span> = <span class="m">10000</span>
+  <span class="n">collection_jitter</span> = <span class="s2">"0s"</span>
+  <span class="n">flush_interval</span> = <span class="s2">"10s"</span>
+  <span class="n">flush_jitter</span> = <span class="s2">"0s"</span>
+  <span class="n">precision</span> = <span class="s2">"0s"</span>
+  <span class="n">hostname</span> = <span class="s2">""</span>
+  <span class="n">omit_hostname</span> = <span class="n">false</span>
+[[<span class="n">outputs</span>.<span class="n">influxdb_v2</span>]]
+    <span class="n">urls</span> = [<span class="s2">"https://influxdb.example.com"</span>]
+    <span class="n">token</span> = <span class="s2">"xxx"</span>
+    <span class="n">organization</span> = <span class="s2">"&lt;organization_name&gt;"</span>
+    <span class="n">bucket</span> = <span class="s2">"telegraf"</span>
+[[<span class="n">inputs</span>.<span class="n">cpu</span>]]
+  <span class="n">percpu</span> = <span class="n">true</span>
+  <span class="n">totalcpu</span> = <span class="n">true</span>
+  <span class="n">collect_cpu_time</span> = <span class="n">false</span>
+  <span class="n">report_active</span> = <span class="n">false</span>
+[[<span class="n">inputs</span>.<span class="n">disk</span>]]
+  <span class="n">ignore_fs</span> = [<span class="s2">"tmpfs"</span>, <span class="s2">"devtmpfs"</span>, <span class="s2">"devfs"</span>, <span class="s2">"iso9660"</span>, <span class="s2">"overlay"</span>, <span class="s2">"aufs"</span>, <span class="s2">"squashfs"</span>, <span class="s2">"loop"</span>]
+[[<span class="n">inputs</span>.<span class="n">diskio</span>]]
+[[<span class="n">inputs</span>.<span class="n">kernel</span>]]
+[[<span class="n">inputs</span>.<span class="n">mem</span>]]
+[[<span class="n">inputs</span>.<span class="n">processes</span>]]
+[[<span class="n">inputs</span>.<span class="n">swap</span>]]
+[[<span class="n">inputs</span>.<span class="n">system</span>]]
+[[<span class="n">inputs</span>.<span class="n">bond</span>]]
+[[<span class="n">inputs</span>.<span class="n">net</span>]]
+[[<span class="n">inputs</span>.<span class="n">nvidia_smi</span>]]
+    <span class="n">timeout</span> = <span class="s2">"25s"</span>
+[[<span class="n">inputs</span>.<span class="n">smart</span>]]
+    <span class="n">interval</span> = <span class="s2">"600s"</span>
+    <span class="n">attributes</span> = <span class="n">true</span>
+[[<span class="n">inputs</span>.<span class="n">temp</span>]]
+</code></pre></div></div> <h3 id="agent">[agent]</h3> <p>This configures how agent behaves, <code class="language-plaintext highlighter-rouge">hostname</code> defaults to system’s hostname.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[<span class="n">agent</span>]
+  <span class="n">interval</span> = <span class="s2">"60s"</span>
+  <span class="n">round_interval</span> = <span class="n">true</span>
+  <span class="n">metric_batch_size</span> = <span class="m">1000</span>
+  <span class="n">metric_buffer_limit</span> = <span class="m">10000</span>
+  <span class="n">collection_jitter</span> = <span class="s2">"0s"</span>
+  <span class="n">flush_interval</span> = <span class="s2">"10s"</span>
+  <span class="n">flush_jitter</span> = <span class="s2">"0s"</span>
+  <span class="n">precision</span> = <span class="s2">"0s"</span>
+  <span class="n">hostname</span> = <span class="s2">""</span>
+  <span class="n">omit_hostname</span> = <span class="n">false</span>
+</code></pre></div></div> <h3 id="outputsinfluxdb_vs">[outputs.influxdb_vs]</h3> <p>This section instructs telegraf to send metric to InfluxDB database, <code class="language-plaintext highlighter-rouge">url</code>, <code class="language-plaintext highlighter-rouge">token</code>, <code class="language-plaintext highlighter-rouge">organization</code> and <code class="language-plaintext highlighter-rouge">bucket</code> need to be properly set.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">outputs</span>.<span class="n">influxdb_v2</span>]]
+    <span class="n">urls</span> = [<span class="s2">"https://influxdb.example.com"</span>]
+    <span class="n">token</span> = <span class="s2">"xxx"</span>
+    <span class="n">organization</span> = <span class="s2">"&lt;organization_name&gt;"</span>
+    <span class="n">bucket</span> = <span class="s2">"telegraf"</span>
+</code></pre></div></div> <h3 id="inputscpu">[[inputs.cpu]]</h3> <p>This enables the collection of CPU usage.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">cpu</span>]]
+  <span class="n">percpu</span> = <span class="n">true</span>
+  <span class="n">totalcpu</span> = <span class="n">true</span>
+  <span class="n">collect_cpu_time</span> = <span class="n">false</span>
+  <span class="n">report_active</span> = <span class="n">false</span>
+</code></pre></div></div> <h3 id="inputsdisk">[[inputs.disk]]</h3> <p>This enables the collection of disk and filesystem, except some types.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">disk</span>]]
+  <span class="n">ignore_fs</span> = [<span class="s2">"tmpfs"</span>, <span class="s2">"devtmpfs"</span>, <span class="s2">"devfs"</span>, <span class="s2">"iso9660"</span>, <span class="s2">"overlay"</span>, <span class="s2">"aufs"</span>, <span class="s2">"squashfs"</span>, <span class="s2">"loop"</span>]
+</code></pre></div></div> <h3 id="inputsdiskio">[[inputs.diskio]]</h3> <p>This enables the collection of disk io.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">diskio</span>]]
+</code></pre></div></div> <h3 id="inputskernel">[[inputs.kernel]]</h3> <p>This enables the collection of kernel info.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">kernel</span>]]
+</code></pre></div></div> <h3 id="inputsmem">[[inputs.mem]]</h3> <p>This enables the collection of memory usage.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">mem</span>]]
+</code></pre></div></div> <h3 id="inputsprocesses">[[inputs.processes]]</h3> <p>This enables the collection of processes.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">processes</span>]]
+</code></pre></div></div> <h3 id="inputsswap">[[inputs.swap]]</h3> <p>This enables the collection of swap usage.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">swap</span>]]
+</code></pre></div></div> <h3 id="inputssystem">[[inputs.system]]</h3> <p>This enables the collection of system.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">system</span>]]
+</code></pre></div></div> <h3 id="inputsbond">[[inputs.bond]]</h3> <p>This enables the collection of traffic.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">bond</span>]]
+</code></pre></div></div> <h3 id="inputsnet">[[inputs.net]]</h3> <p>This enables the collection of network.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">net</span>]]
+</code></pre></div></div> <h3 id="inputsnvidia_smi">[[inputs.nvidia_smi]]</h3> <p>This enables the collection of NVIDIA GPUs.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">nvidia_smi</span>]]
+    <span class="n">timeout</span> = <span class="s2">"25s"</span>
+</code></pre></div></div> <h3 id="inputssmart">[[inputs.smart]]</h3> <p>This enables the collection of SMART information.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">smart</span>]]
+    <span class="n">interval</span> = <span class="s2">"600s"</span>
+    <span class="n">attributes</span> = <span class="n">true</span>
+</code></pre></div></div> <h3 id="inputstemp">[[inputs.temp]]</h3> <p>This enables the collection of thermo.</p> <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">inputs</span>.<span class="n">temp</span>]]
+</code></pre></div></div> <p>After you have generated the configuration, run <code class="language-plaintext highlighter-rouge">telegraf</code> command to test it. If everything works fine, enable the telegraf system service and let it run in the background.</p>]]></content><author><name></name></author><category term="IT"/><category term="telemetry"/><category term="maintenance"/><category term="IT"/><summary type="html"><![CDATA[Telegraf is an agent for collecting, processing, aggregating, and writing metrics. With over 200 plugins, it provides all the metrics you need to track and understand your systems and applications effectively. This blog will demonstrate how to set up a telegraf metric stack.]]></summary></entry><entry><title type="html">CKA exam cheatsheet</title><link href="https://alshedivat.github.io/blog/2024/cka-exam-explained/" rel="alternate" type="text/html" title="CKA exam cheatsheet"/><published>2024-09-19T00:01:00+00:00</published><updated>2024-09-19T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/cka-exam-explained</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/cka-exam-explained/"><![CDATA[<p>Certificated Kubernetes Admin (CKA) is a widely recognized certificate for K8S admins. The exam is carried out in simulators. There are 17 categories of questions:</p> <ol> <li>RBAC</li> <li>Pod Monitor</li> <li>NetworkPolicy</li> <li>Service Exposure</li> <li>Ingress Creation</li> <li>Node Troubleshooting</li> <li>Pod Scheduling</li> <li>Node Top</li> <li>Multi-Container Pod</li> <li>PV Creation</li> <li>PVC Creation</li> <li>Pod Logging</li> <li>Sidecar Logging</li> <li>Deployment Scale-Up</li> <li>Etcd Backup</li> <li>Cluster Upgrade</li> <li>Node Maintenance</li> </ol>]]></content><author><name></name></author><category term="IT"/><category term="windows"/><summary type="html"><![CDATA[Certificated Kubernetes Admin (CKA) is a widely recognized certificate for K8S admins. The exam is carried out in simulators. There are 17 categories of questions:]]></summary></entry><entry><title type="html">Solution to The physical disk’s sector size is not supported by the storage pool (0x80E70004)</title><link href="https://alshedivat.github.io/blog/2024/windows-storage-space/" rel="alternate" type="text/html" title="Solution to The physical disk’s sector size is not supported by the storage pool (0x80E70004)"/><published>2024-09-19T00:01:00+00:00</published><updated>2024-09-19T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/windows-storage-space</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/windows-storage-space/"><![CDATA[<p>Sometimes, people get error when adding disks to storage space:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The physical disk's sector size is not supported by the storage pool.
 (0x80E70004)
 </code></pre></div></div> <p>This is usually happens when the disk had a 512B partition before it was inserted and detected by Windows. Windows will cache the result and treat the disk’s sector size as 512B. The solution is simple:</p> <ol> <li>Delete all partitions on the disk.</li> <li>Reboot.</li> <li>Re-add the disk to storage pool, it should work now.</li> </ol>]]></content><author><name></name></author><category term="IT"/><category term="windows"/><summary type="html"><![CDATA[Erase and Reboot is all you need.]]></summary></entry><entry><title type="html">Kubernetes Ingress annotations for Harbor</title><link href="https://alshedivat.github.io/blog/2024/k8s-ingress-annotations/" rel="alternate" type="text/html" title="Kubernetes Ingress annotations for Harbor"/><published>2024-09-19T00:01:00+00:00</published><updated>2024-09-19T00:01:00+00:00</updated><id>https://alshedivat.github.io/blog/2024/k8s-ingress-annotations</id><content type="html" xml:base="https://alshedivat.github.io/blog/2024/k8s-ingress-annotations/"><![CDATA[<p>When pushing large images to <a href="https://goharbor.io/">harbor</a> image registry, client may run into push operation timeout due to incorrect <code class="language-plaintext highlighter-rouge">proxy-*-timeout</code> configuration, or 403 forbidden due to insufficient <code class="language-plaintext highlighter-rouge">proxy-body-size</code> configuration. The solution is to patch ingress resource of harbor. Here is an example:</p> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">metadata</span><span class="pi">:</span>
   <span class="na">annotations</span><span class="pi">:</span>
