@@ -41,7 +41,7 @@ I completed my undergraduate and graduate studies at SJTU ParisTech Elite Instit
 **Programming**. I specialize in multiple programming languages, including:
 
 - Expert Level: **C/C++**, **Python** and **Golang**.
-- Advanced Level: **Shell**, **CMake**, **Makefile**, **MATLAB**, **Shell** and **Dockerifle**.
+- Advanced Level: **Shell**, **GIT**, **CMake**, **Makefile**, **MATLAB**, **Shell** and **Dockerifle**.
 - Intermediate Level: **JavaScript** and **CUDA**.
 - Beginner: **Verilog**.
 
@@ -72,4 +72,13 @@ I completed my undergraduate and graduate studies at SJTU ParisTech Elite Instit
 - **Kubernetes**: I am ready to be certified as a Certified Kubernetes Administrator.
 - **Parallel Computing**: MPI, Hadoop and DeepSpeed.
 - **Networking**: BGP, OSPF, VXLAN, Wireguard and ZTNA.
-- **Miscellaneous**: Assembling PC, servers, network switches, wire ethernet cables.
+- **Miscellaneous**: I can assemble PC, servers, setup network switches and wire ethernet cables.
+
+**Creation**. Finally, these are some of my creative skills:
+
+- **Video Editing**: I have experience with **Adobe Premiere**, **DaVinci Resolve** and **FCPX**.
+- **Poster Design**: I am familiar with **Adobe Illustrator** and **InDesign**.
+- **Photo Editing**: I have experience with **Adobe Photoshop** and **Lightroom**.
+- **Photagraphy**: Familiar with **Canon EOS** and **Sony Alpha** series.
+- **Computer Graphics**: I have experience with **Blender** and **VRAY**.
+- **Machining**: I have experience with **woodworking**, **metalwork**, and **Soldering**.
