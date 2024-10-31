@@ -1,8 +1,9 @@
-github_users:
-  - davidliyutong
+# github_users:
+#   - davidliyutong
 
 github_repos:
   - robotflow-initiative/rfmarkit-esp-node
+  - davidliyutong/idekube-container
   - davidliyutong/cloud-platform-apiserver
   - davidliyutong/cloud-platform-frontend
   - xiaoxiaoxh/UniFolding
