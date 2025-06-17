@@ -41,7 +41,7 @@ I completed my undergraduate and graduate studies at SJTU ParisTech Elite Instit
 **Programming**. I specialize in multiple programming languages, including:
 
 - Expert Level: **C/C++**, **Python** and **Golang**.
-- Advanced Level: **Shell**, **GIT**, **CMake**, **Makefile**, **MATLAB**, **Shell** and **Dockerifle**.
+- Advanced Level: **Shell**, **GIT**, **CMake**, **Makefile**, **MATLAB**, **Shell** and **Dockerfile**.
 - Intermediate Level: **JavaScript** and **CUDA**.
 - Beginner Level: **Verilog**.
 
