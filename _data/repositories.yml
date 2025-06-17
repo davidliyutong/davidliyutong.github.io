@@ -2,6 +2,7 @@
 #   - davidliyutong
 
 github_repos:
+  - davidliyutong/fsglove
   - robotflow-initiative/rfmarkit-esp-node
   - davidliyutong/idekube-container
   - davidliyutong/cloud-platform-apiserver
