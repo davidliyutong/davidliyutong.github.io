@@ -9,3 +9,6 @@ related_publications: false
 ---
 
 IDEKube is the successor of [cloud-platform-project](https://github.com/davidliyutong/cloud-platform-project), which is an web based coding solution for small companies / labs. It orchestras WebIDE containers, shared volumes, etc. in a Kubernetes cluster.
+
+For more details, please visit [https://github.com/davidliyutong/idekube-container](https://github.com/davidliyutong/idekube-container).
+
