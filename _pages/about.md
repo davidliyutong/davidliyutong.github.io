@@ -20,64 +20,34 @@ social: true # includes social icons at the bottom of the page
 I am currently working at [RobotFlow](https://github.com/robotflow-initiative) lab. My MS was completed at the Shanghai Jiao Tong University under
 the supervision of [Prof. Cewu Lu](https://www.mvig.org/) and guidance of [Dr. Wenqiang Xu](https://wenqiangx.github.io/).
 
-Starting August 2025, I will be a PhD student at the [National University of Singapore](https://www.nus.edu.sg/), starting from August 2025.
+Starting August 2025, I will be a PhD student at the [National University of Singapore](https://www.nus.edu.sg/).
 
 ## Research Interests
 
 I am committed to building complex robotic systems with integrated hardware and software to help humans work and live better. My main research interests are:
 
-- **Sensor Systems**: I developped a [MarkIt](https://sites.google.com/view/markit-virat/home) when I was taking my Master's. In [Capturing forceful interaction with deformable objects using a deep learning-powered stretchable tactile array](https://github.com/jeffsonyu/ViTaM), a paper accepted by **Nature Communication**, we proposed a tactile glove with pressure sensing. Currently, I am building a modular wireless IMU-based motion capture glove.
-- **Robot Learning**: I learned about all aspects of robotics learning while developping the bi-hand garment manipulation system [UniFolding: Towards Sample-efficient, Scalable, and Generalizable Robotic Garment Folding](https://unifolding.robotflow.ai/) (presented at **CoRL2023**).
+- **Sensor Systems**: I have developed [MarkIt](https://sites.google.com/view/markit-virat/home), a wireless IMU-based motion capture system that can scale to a large number of sensors. In [FSGlove: An Inertial-Based Hand Tracking System with Shape-Aware Calibration](https://sites.google.com/view/fsglove), we proposed a full-DoF motion capture glove that is easy to assemble and affordable. In "[Capturing forceful interaction with deformable objects using a deep learning-powered stretchable tactile array](https://github.com/jeffsonyu/ViTaM)," a paper accepted by **Nature Communications**, we proposed a tactile glove with pressure sensing. Currently, I am building a modular, wireless, IMU-based motion capture glove.
 
-Also, I have a deep interest in the following areas：
+- **Robot Learning**: In "[UniFolding: Towards Sample-efficient, Scalable, and Generalizable Robotic Garment Folding](https://unifolding.robotflow.ai/)" (presented at **CoRL 2023**), we proposed a novel approach to robotic garment folding that is sample-efficient and generalizable across different garments.
 
-- **Computer Vision**: Not only do I have extensive knowledge of traditional image and video processing algorithms, but I am also very familiar with 3D vision algorithms, multi-angle point cloud reconstruction depth cameras.
-- **Simulation**: I have experience with simulators such as PyBullet, Issaclab and have contributed to [pyrfuniverse](https://github.com/robotflow-initiative/pyrfuniverse).
-- **HPC & Networking**: I am interested in building intelligent data centers and server clusters, having been involved in [Towards an energy-efficient Data Center Network based on deep reinforcement learning](https://www.sciencedirect.com/science/article/abs/pii/S1389128622001220).
+I also have a deep interest in the following areas:
+
+- **Computer Vision**: I have worked on various computer vision projects, including [multi-view reconstruction](https://sites.google.com/view/clothpose) and [pose estimation](https://garment-tracking.robotflow.ai/).
+
+- **Simulation**: I contributed to [RFuniverse](https://github.com/robotflow-initiative/rfuniverse), a Unity-based simulation platform for robotics research, which is designed to be modular and extensible.
+
+- **HPC & Networking**: In "[Towards an energy-efficient Data Center Network based on deep reinforcement learning](https://www.sciencedirect.com/science/article/abs/pii/S1389128622001220)," we proposed a novel approach to optimize data center networks using deep reinforcement learning. I am also interested in building computer clusters. Currently, I am the administrator of the SPEIT Online Coding Platform.
 
 ## Strengths
 
-I completed my undergraduate and graduate studies at SJTU ParisTech Elite Institute, a Sino-French cooperative program that features a solid and rich **engineering** curriculum. Here are some of my skills:
+As an engineer with a comprehensive background from SJTU-ParisTech, I possess a deep and practical skill set spanning multiple disciplines. My core strengths include:
 
-**Programming**. I specialize in multiple programming languages, including:
+**Full-Stack Development**: From low-level embedded programming in C/C++ and hardware-level protocols to high-level applications in Python and Go, I build complete and robust software solutions. I am proficient in team collaboration on large projects, utilizing tools like Git and CI/CD pipelines to ensure code quality and maintainability.
 
-- Expert Level: **C/C++**, **Python** and **Golang**.- Advanced Level: **Shell**, **CMake**, **Makefile**, **MATLAB**
-- Intermediate Level: **JavaScript** and **CUDA**.
-- Beginner Level: **Verilog**.
+**Software & Embedded Systems**: I have extensive experience in developing softwares for embedded systems using Arduino, FreeRTOS and Linux. I am adept at designing and implementing AHRS, Video Capture and IoT applications
 
-**Embedded Development**. I have ample experience in the field of embedded development.
+**Robotics & Automation**: I have hands-on experience with major robotics platforms like Franka Panda and Universal Robots, developing for both ROS1 and ROS2. My work has involved everything from motion planning with MoveIt to developing synchronized, high-precision data acquisition systems.
 
-- **Frameworks**: Arduino, **FreeRTOS** (ESP32, STM32), and **Linux** (RK Series, Raspberry Pis).
-- **Peripherals**: SPI, I2C, UART, PWM/ADC, and I2C
-- **Communication**: BLE, 802.11, 802.15.4, Ethernet and 6LoWPAN.
-- **Network Protocols**: TCP/UDP, HTTP, gRPC, WebSocket, MQTT, CoAP and, TUN.
-- **Applications**: **AHRS**, **Video Capture**, and **IoT**.
-- ""Miscellaneous**: I have experience with **FPGA** testing and software development (base on Xilinx Artix Series).
+**Infrastructure & IT**: I am highly skilled in designing, deploying, and maintaining kubernetes clusters, resilient server infrastructure, virtualized environments, and distributed storage systems. I am also familiar with networking protocols and security practices, ensuring robust and secure systems.
 
-**Robot Development**. The main skills I have acquired in the field of robotics development can be categorized into these sections:
-
-- **ROS**: I have experience in developing packages for **ROS1** and **ROS2**,
-- **Robots**: I am familiar with multiple robot solutions, including **Franka Panda**, **Flexiv Rizon**, and the **UR** series.
-- **Motion Capture**: I have developed Data Acquisition Programs that works with **OptiTrack**.
-- **TSN**: I have extensive experience in sensor time synchronization and simultaneous data recording. I am familiar with the **IEEE 1588** standard and have implemented it in my projects.
-- **Simulation**: I have used simulators such as **IssacLab**, **Bullet** and **RFUniverse**.
-- **Visualization**: I am familiar with **Open3D** and **ImGUI**.
-- **Planning**: I have experience in using MoveIt.
-- **Mechanical Design**: I am proficient in designing parts using **Solidworks** and **SketchUp**.
-
-**Information Engineering.** My personal hobbies include assembling server clusters and maintaining weak power systems. I have worked as a cluster administrator in my colleges and my labs. I am skilled in:
-
-- **Server Maintenance**: Linux (including Debian/Ubuntu/RedHat/Arch) and Windows Server.- **Virtualized Computing**: QEMU, Proxmox, VMWare and Hyper-V.
-- **Storage Systems**: CIFS, NFS, S3-like, ISCSI, GlusterFS and Ceph.
-- **Kubernetes**: I am a Certified Kubernetes Administrator.
-- **Parallel Computing**: MPI, Hadoop and DeepSpeed.
-- **Networking**: BGP, OSPF, VXLAN, Wireguard and ZTNA.
-- **Miscellaneous**: I can assemble PC, servers, setup network switches, and wiring.
-
-**Creation**. Finally, these are some of my creative skills:
-
-- **Video Editing**: I have experience with **Adobe Premiere**, **DaVinci Resolve** and **FCPX**.- **Poster Design**: I am familiar with **Adobe Illustrator** and **InDesign**.
-- **Photo Editing**: I have experience with **Adobe Photoshop** and **Lightroom**.
-- **Photagraphy**: Familiar with **Canon EOS** and **Sony Alpha** series.
-- **Computer Graphics**: I have experience with **Blender** and **Vray** render.
-- **Machining**: I have experience with **woodwork**, **metalwork**, and **soldering**.
+**Creative & Technical Arts**: I am also a creator, proficient in a range of tools for photoshoping, video production, graphic design, and 3D modeling.
