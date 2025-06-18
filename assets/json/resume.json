@@ -2,7 +2,10 @@
   "basics": {
     "name": "Yutong Li",
     "label": "Student",
-    "email": "davidliyutong@sjtu.edu.cn",
+    "email": [
+      "davidliyutong@sjtu.edu.cn",
+      "yutong.li@u.nus.edu"
+    ],
     "location": {
       "address": "800 Dongchuan Road",
       "city": "Minhang District",
@@ -39,14 +42,14 @@
       "company": "MIT Device Realization Lab",
       "position": "Collaborator",
       "startDate": "2024-06",
-      "endDate": "Present",
+      "endDate": "2025-06",
       "summary": "Combine shape sensor with Ultrasound sensor for tissue reconstruction."
     },
     {
       "company": "MVIG - RobotFlow",
       "position": "Core Member",
       "startDate": "2021-06",
-      "endDate": "Present",
+      "endDate": "2025-07",
       "summary": "Research topic includes robotic manipulation, motion capture, simulation."
     },
     {

@@ -14,13 +14,13 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-<font size=5> `<b>`Master Graduate in Information Engineering`</b>` `<br>` Shanghai Jiao Tong University`</font>`
-`<br>`
+<font size=5> <b>Master Graduate in Information Engineering</b> <br> Shanghai Jiao Tong University</font>
+<br>
 
 I am currently working at [RobotFlow](https://github.com/robotflow-initiative) lab. My MS was completed at the Shanghai Jiao Tong University under
 the supervision of [Prof. Cewu Lu](https://www.mvig.org/) and guidance of [Dr. Wenqiang Xu](https://wenqiangx.github.io/).
 
-Starting August 2025, I will be a PhD student at the [National University of Singapore](https://www.nus.edu.sg/).
+Starting August 2025, I will be pursuing a PhD at the [National University of Singapore](https://www.nus.edu.sg/) under the supervision of [Prof. Xingyu Liu](https://xingyul.github.io/)
 
 ## Research Interests
 
