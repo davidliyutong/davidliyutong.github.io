@@ -37,17 +37,3 @@ I also have a deep interest in the following areas:
 - **Simulation**: I contributed to [RFuniverse](https://github.com/robotflow-initiative/rfuniverse), a Unity-based simulation platform for robotics research, which is designed to be modular and extensible.
 
 - **HPC & Networking**: In "[Towards an energy-efficient Data Center Network based on deep reinforcement learning](https://www.sciencedirect.com/science/article/abs/pii/S1389128622001220)," we proposed a novel approach to optimize data center networks using deep reinforcement learning. I am also interested in building computer clusters. Currently, I am the administrator of the SPEIT Online Coding Platform.
-
-## Strengths
-
-As an engineer with a comprehensive background from SJTU-ParisTech, I possess a deep and practical skill set spanning multiple disciplines. My core strengths include:
-
-**Full-Stack Development**: From low-level embedded programming in C/C++ and hardware-level protocols to high-level applications in Python and Go, I build complete and robust software solutions. I am proficient in team collaboration on large projects, utilizing tools like Git and CI/CD pipelines to ensure code quality and maintainability.
-
-**Software & Embedded Systems**: I have extensive experience in developing softwares for embedded systems using Arduino, FreeRTOS and Linux. I am adept at designing and implementing AHRS, Video Capture and IoT applications
-
-**Robotics & Automation**: I have hands-on experience with major robotics platforms like Franka Panda and Universal Robots, developing for both ROS1 and ROS2. My work has involved everything from motion planning with MoveIt to developing synchronized, high-precision data acquisition systems.
-
-**Infrastructure & IT**: I am highly skilled in designing, deploying, and maintaining kubernetes clusters, resilient server infrastructure, virtualized environments, and distributed storage systems. I am also familiar with networking protocols and security practices, ensuring robust and secure systems.
-
-**Creative & Technical Arts**: I am also a creator, proficient in a range of tools for photoshoping, video production, graphic design, and 3D modeling.
