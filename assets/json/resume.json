@@ -1,16 +1,16 @@
 {
   "basics": {
     "name": "Yutong Li",
-    "label": "Student",
+    "label": "PhD Student",
     "email": [
-      "davidliyutong@sjtu.edu.cn",
-      "yutong.li@u.nus.edu"
+      "yutong.li@u.nus.edu",
+      "davidliyutong@sjtu.edu.cn"
     ],
     "location": {
-      "address": "800 Dongchuan Road",
-      "city": "Minhang District",
-      "postalCode": "200240",
-      "countryCode": "CN"
+      "address": "4 Engineering Drive 3",
+      "city": "Singapore",
+      "postalCode": "117583",
+      "countryCode": "SG"
     },
     "profiles": [
       {
@@ -21,6 +21,13 @@
     ]
   },
   "education": [
+    {
+      "institution": "National University of Singapore",
+      "area": "Electronic Engineering",
+      "studyType": "PhD",
+      "startDate": "2025-08",
+      "endDate": ""
+    },
     {
       "institution": "Shanghai Jiao Tong University",
       "area": "Information Engineering",
@@ -39,32 +46,39 @@
   ],
   "work": [
     {
-      "company": "MIT Device Realization Lab",
-      "position": "Collaborator",
-      "startDate": "2024-06",
-      "endDate": "2025-06",
-      "summary": "Combine shape sensor with Ultrasound sensor for tissue reconstruction."
+      "company": "DaxRobotics",
+      "position": "R&D Intern",
+      "startDate": "2025-06",
+      "endDate": "2025-08",
+      "summary": "Developed and optimized a motion capture system for robotic applications. Designed motion capture glove hardware and algorithms."
     },
     {
-      "company": "MVIG - RobotFlow",
+      "company": "Device Realization Lab, MIT",
+      "position": "Collaborator",
+      "startDate": "2024-06",
+      "endDate": "2024-10",
+      "summary": "Collaborate on the design and development of IMU-based free-hand ultrasound systems for robotics."
+    },
+    {
+      "company": "RobotFlow Lab, Shanghai Jiao Tong University",
       "position": "Core Member",
       "startDate": "2021-06",
-      "endDate": "2025-07",
-      "summary": "Research topic includes robotic manipulation, motion capture, simulation."
+      "endDate": "2025-05",
+      "summary": "Focus on robotic manipulation, motion capture, and simulation. Managed and maintained the lab's GPU cluster and infrastructure."
     },
     {
       "company": "Flexiv Shanghai",
-      "position": "Intern R&D",
+      "position": "R&D Intern",
       "startDate": "2023-06",
       "endDate": "2023-12",
-      "summary": "Developed a dual-arm cooperative robot system for garment manipulation"
+      "summary": "Developed a dual-arm cooperative robot system for garment manipulation, presented at WAIC 24."
     },
     {
-      "company": "ParisTech Elite Institute of Technology, Shanghai Jiao Tong University",
+      "company": "Paris Elite Institute of Technology, Shanghai Jiao Tong University",
       "position": "TA",
       "startDate": "2021-06",
       "endDate": "2023-06",
-      "summary": "Serving as a teaching assistant for C programming and data structure courses"
+      "summary": "Teaching assistant for C programming and data structure courses. Awarded Excellent Teaching Assistant Award (2022.07)."
     }
   ],
   "skills": [
@@ -103,15 +117,23 @@
   ],
   "awards": [
     {
-      "title": "Shanghai Outstanding Graduate Top 3%",
+      "title": "NUS Presidential Graduate Fellowship",
+      "date": "2025-08"
+    },
+    {
+      "title": "Shanghai Outstanding Graduate (Top 3%)",
       "date": "2024-03"
     },
     {
-      "title": "Baosteel Scholarship",
+      "title": "Baosteel Scholarship (Top 3%)",
       "date": "2023-10"
     },
     {
-      "title": "Shanghai Jiao Tong University Outstanding Graduate",
+      "title": "Shanghai Jiao Tong University Excellent Teaching Assistant Award",
+      "date": "2022-07"
+    },
+    {
+      "title": "Shanghai Jiao Tong University Outstanding Graduate (Top 10%)",
       "date": "2021-06"
     }
   ]
