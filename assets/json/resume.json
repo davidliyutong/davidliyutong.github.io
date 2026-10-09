@@ -2,10 +2,7 @@
   "basics": {
     "name": "Yutong Li",
     "label": "PhD Student",
-    "email": [
-      "yutong.li@u.nus.edu",
-      "davidliyutong@sjtu.edu.cn"
-    ],
+    "email": ["yutong.li@u.nus.edu", "davidliyutong@sjtu.edu.cn"],
     "location": {
       "address": "4 Engineering Drive 3",
       "city": "Singapore",
@@ -84,14 +81,7 @@
   "skills": [
     {
       "name": "Programming",
-      "keywords": [
-        "Python",
-        "Golang",
-        "C/C++",
-        "Javascript",
-        "CUDA",
-        "Matlab"
-      ]
+      "keywords": ["Python", "Golang", "C/C++", "Javascript", "CUDA", "Matlab"]
     },
     {
       "name": "Engineering",
@@ -109,10 +99,7 @@
     },
     {
       "name": "Languages",
-      "keywords": [
-        "English (TOEFL 105, CET-6 599)",
-        "French (DELF B2)"
-      ]
+      "keywords": ["English (TOEFL 105, CET-6 599)", "French (DELF B2)"]
     }
   ],
   "awards": [
