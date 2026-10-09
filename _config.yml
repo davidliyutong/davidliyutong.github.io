@@ -394,7 +394,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-quality 85"
+    webp: "-coalesce -quality 85" # -coalesce: animated GIFs with optimized frames fail to convert on ImageMagick 6
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.
