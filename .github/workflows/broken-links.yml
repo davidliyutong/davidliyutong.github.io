@@ -46,7 +46,11 @@ jobs:
 
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.9.0
+        env:
+          # authenticated requests avoid GitHub rate limiting (503/429) on github.com links
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           fail: true
           # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress './**/*.md' './**/*.html'
+          # github.com/<repo>/blob/ pages return 503 to CI runners, so check the raw file instead
+          args: --user-agent 'curl/7.54' --remap 'https://github\.com/([^/]+/[^/]+)/blob/([^?#]+).* https://raw.githubusercontent.com/$1/$2' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/.archive --exclude-path _posts/.draft --exclude-path CUSTOMIZE.md --verbose --no-progress './**/*.md' './**/*.html'
